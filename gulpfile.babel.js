@@ -65,3 +65,6 @@ options.proxy = {
 
 // Register all node-build-web-app build tasks.
 build.registerTasks(gulp, options);
+
+// Require all tasks/modules in ./gulp, including sub folders
+requireDir('./gulp', { recurse: true });
