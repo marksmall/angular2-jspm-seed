@@ -54,6 +54,14 @@ options.mangleProductionJSBundle = false; // Mangled JS bundles are currently no
  */
 //options.systemjsConfigurationFile = "my-systemjs.config.js";
 
+/*
+  Set API proxy, this is the URL to listen for calls on, if one received, forward it on to the
+  target URL.
+*/
+options.proxy = {
+	api: '/api',
+	target: 'http://localhost:8000'
+}
 
-
-modernWebDevBuild.registerTasks(gulp, options);
+// Register all node-build-web-app build tasks.
+build.registerTasks(gulp, options);
