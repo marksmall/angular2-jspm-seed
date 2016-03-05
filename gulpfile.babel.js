@@ -4,8 +4,9 @@
 "use strict";
 
 import gulp from "gulp";
+import requireDir from "require-dir";
+import build from "node-build-web-app";
 
-import modernWebDevBuild from "modern-web-dev-build";
 let options = {};
 
 /*
