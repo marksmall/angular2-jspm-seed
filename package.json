@@ -1,16 +1,24 @@
 {
-  "name": "modern-webapp",
-  "description": "Created by the ModernWebDev Yeoman Generator",
+  "name": "angular2-jspm-seed",
+  "description": "Seed application with proxied API stubs",
   "author": {
-    "name": "nobody",
-    "email": "foo@bar.com",
-    "url": "https://twitter.com/dsebastien"
+    "name": "Mark Small",
+    "email": "marksmall@gmx.com"
   },
   "contributors": [],
-  "homepage": "https://www.dsebastien.net",
-  "bugs": "https://www.dsebastien.net",
+  "homepage": "https://github.com/marksmall/angular2-jspm-seed",
+  "bugs": "https://github.com/marksmall/angular2-jspm-seed/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marksmall/angular2-jspm-seed.git"
+  },
   "keywords": [
-    "web"
+    "web",
+    "gulp",
+    "angular2",
+    "jspm",
+    "proxied api"
   ],
   "private": true,
   "version": "0.0.1",
