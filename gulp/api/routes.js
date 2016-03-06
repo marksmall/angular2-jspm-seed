@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var search = require('./search');
 var tools = require('./tools');
 var print = require('./print');
+var config = require('../../gulpfile.babel.js')
 
 var app = express();
 app.use(bodyParser.json());
@@ -18,5 +19,5 @@ app.get('/api/search', search.getResults);
 app.get('/api/tools', tools.getTools);
 app.post('/api/print', print.print);
 
-app.listen(8000);
-gutil.log(gutil.colors.green('API Stub listening on port: 8000'));
+app.listen(config.options.proxy.port);
+gutil.log(gutil.colors.green('API Stub listening on port: ' + config.options.proxy.port));

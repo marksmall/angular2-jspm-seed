@@ -60,11 +60,14 @@ options.mangleProductionJSBundle = false; // Mangled JS bundles are currently no
 */
 options.proxy = {
 	api: '/api',
-	target: 'http://localhost:8000'
-}
+	target: 'http://localhost',
+	port: 8000
+};
 
 // Register all node-build-web-app build tasks.
 build.registerTasks(gulp, options);
 
 // Require all tasks/modules in ./gulp, including sub folders
+exports.options = options;
 requireDir('./gulp', { recurse: true });
+
