@@ -1,10 +1,10 @@
 'use strict';
 
-var gutil = require('gulp-util');
+let gutil = require('gulp-util');
 
-var noResults = [];
+let noResults = [];
 
-var singleResult = [{
+let singleResult = [{
   name: 'EH9 1PR',
   zoomLevel: 16,
   point: {
@@ -13,7 +13,7 @@ var singleResult = [{
   }
 }];
 
-var multipleResults = [{
+let multipleResults = [{
   name: 'Edinburgh',
   zoomLevel: 16,
   point: {
@@ -36,7 +36,7 @@ var multipleResults = [{
   }
 }];
 
-exports.getResults = function(req, res) {
+let search = (req, res) =>{
   gutil.log(gutil.colors.green('Search: ', req.query.search));
   if (req.query.search === 'zero') {
     res.json(noResults);
@@ -45,4 +45,8 @@ exports.getResults = function(req, res) {
   } else {
     res.json(multipleResults);
   }
+};
+
+export default {
+  search
 };

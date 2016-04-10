@@ -1,6 +1,6 @@
 'use strict';
 
-var tools = [{
+let tools = [{
   name: 'Print',
   glyph: 'print',
   tooltip: 'Open Print Preview'
@@ -33,9 +33,12 @@ var tools = [{
   glyph: 'print',
   tooltip: 'View Legend for layer'
 }];
-console.log('Before getTools');
-exports.getTools = function(req, res) {
+
+let getTools = (req, res) =>{
   console.log('Inside getTools');
   res.json(tools);
 };
-console.log('After getTools');
+
+export default {
+  getTools
+};

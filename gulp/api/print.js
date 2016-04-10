@@ -1,12 +1,16 @@
 'use strict';
 
-var gutil = require('gulp-util');
+let gutil = require('gulp-util');
 
-var printResults = [{
+let printResults = [{
   name: 'Edinburgh'
 }];
 
-exports.print = function(req, res) {
+let print = (req, res) =>{
   gutil.log(gutil.colors.green('Print: ', JSON.stringify(req.body.printOptions)));
   res.json(printResults);
+};
+
+export default {
+  print
 };

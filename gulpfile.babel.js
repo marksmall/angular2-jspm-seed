@@ -69,5 +69,5 @@ build.registerTasks(gulp, options);
 
 // Require all tasks/modules in ./gulp, including sub folders
 exports.options = options;
-requireDir('./gulp', { recurse: true });
+requireDir('./gulp/tasks', { recurse: true });
 
