@@ -4,11 +4,15 @@ cache:
   directories:
   - node_modules
   - jspm_packages
+branches:
+  only:
+  - master
 notifications:
   email: true
 node_js:
-  - '4.2'
+  - '4.4.2'
 before_script:
   - npm prune
 before_install:
+  - npm install -g npm
   - npm run setup
