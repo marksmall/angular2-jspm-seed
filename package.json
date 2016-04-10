@@ -60,8 +60,8 @@
     "typings": "0.x"
   },
   "engines": {
-    "node": ">=4.2.6",
-    "npm": ">=3.7.1"
+    "node": ">=4.4.2",
+    "npm": ">=3.8.6"
   },
   "scripts": {
     "tsc": "tsc",
