@@ -54,7 +54,7 @@
     "jasmine-core": "2.4.x",
     "jspm": "0.16.x",
     "karma-jasmine": "0.3.x",
-    "node-build-web-app": "^0.6.6",
+    "node-build-web-app": "^0.6.7",
     "nodemon": "^1.9.1",
     "typescript": "1.8.x",
     "typings": "0.x"
