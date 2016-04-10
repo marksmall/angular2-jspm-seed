@@ -16,6 +16,12 @@ This project is intended as a seed project for Angular 2/JSPM applications. It i
 and displays messages to the user and in the Browser *Developer Tools*.
 
 
+## Proxy API Server
+
+This project provides an example stubbed API proxy. This is intended to provide stub data as if it was retrieved from
+a back-end server. There are examples of GET/POST requests.
+
+
 ## How to build
 
 1. Install required global npm packages: `npm install gulp --global --no-optional`.
