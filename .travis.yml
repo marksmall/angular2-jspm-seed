@@ -10,9 +10,14 @@ branches:
 notifications:
   email: true
 node_js:
-  - '4.4.2'
+- 4.4.2
 before_script:
-  - npm prune
+- npm prune
 before_install:
-  - npm install -g npm
-  - npm run setup
+- npm install -g npm
+- npm install -g jspm
+- jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
+- npm run setup
+env:
+  global:
+    secure: 0FZRJjddem6ncYqLRoZVVxfvMgaY2U2YsV9jDwnaFoZDICJapjt97kValI7uG8KTLsCLpCetGr2xfAyNfT6tVu1OtCNqmrOCW+6AzW4KD7FdTBuhL2DeeR/HIoRgHguzyuXbgBDbyeTRpElV/wFKJK0gPwPaWeT+CCkcBMvkAKxqVUTOwuy1ZdDN6mHeZNMYNHxzIJSzPbf32FetjDux3Gcxc7kwBwbQBvqh4vdadYSb7N+DPtE877awMXss7Z2cHizbxEhr9heUAVKxmq/nNwoeIL6GEK3RYgY0Y7l9BeXCQ3J83ocmkr4oqGOeyuTMTX30eKyWV43tkicpe9DOwG3G2mBw/sEeb0t1cH6uPc6G5B27A6Pfejrd9J8ZilaxMQE7ABdqfNoLLzBFZCO0HcSq1vq4dKRHvnURBZpbaytycEifLViHgBgBkpUIsL78OB5ZZxD8eJnFCSobOxn47iVFNjKiX18403tW9c3qV4SH+zmTZ1SmrQw2MVu1siLn9lwv+DV5qIDJc2hjFX7l5jLRTNKSyzk9drVfv1S/e1BrnPMtxva1yWJPyAI1ax7CywffHCSR5VCkrrHsu3cRZsZuZkRzxjipD4Oso5feaMNd9qR9II+ftSzIwUKTRfb6eKblTbnhZvKnze8XLxrNnS4D9FAXd1Gy4GtK+LAqnmQ=
