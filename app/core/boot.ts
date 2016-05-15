@@ -1,5 +1,8 @@
 "use strict";
 
+import "zone.js";
+import "reflect-metadata";
+
 // import the application
 import {App} from "./app";
 
