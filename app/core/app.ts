@@ -4,7 +4,6 @@
 import {Component} from "@angular/core";
 
 // app components
-import {Home} from "../pages/home/home";
 
 @Component({
 	selector: "app",
