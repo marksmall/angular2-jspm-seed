@@ -19,7 +19,7 @@ import {Home} from "../pages/home/home";
 	directives: [RouterOutlet, RouterLink]
 })
 @RouteConfig([
-	{ path: "/", component: Home, as: "Home", data: undefined } // the as serves as alias for links, etc
+	{ path: "/", component: Home, name: "Home", data: undefined } // the as serves as alias for links, etc
 ])
 export class App {
 	constructor() {
