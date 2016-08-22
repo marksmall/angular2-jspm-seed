@@ -22,9 +22,6 @@ System.config({
     "@angular/router": {
       "main": "index.js"
     },
-    "@angular/router-deprecated": {
-      "main": "index.js"
-    },
     "@angular/platform-browser": {
       "main": "index.js"
     },
@@ -42,14 +39,13 @@ System.config({
     "angular-platform-browser": "npm:@angular/platform-browser@2.0.0-rc.5",
     "angular-platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.0.0-rc.5",
     "angular-router": "npm:@angular/router@3.0.0-rc.1",
-    "angular-router-deprecated": "npm:@angular/router-deprecated@2.0.0-rc.2",
     "angular-upgrade": "npm:@angular/upgrade@2.0.0-rc.5",
     "babel": "npm:babel-core@6.13.2",
     "babel-runtime": "npm:babel-runtime@6.11.6",
     "normalize.css": "github:necolas/normalize.css@4.2.0",
     "reflect-metadata": "npm:reflect-metadata@0.1.8",
     "rxjs": "npm:rxjs@5.0.0-beta.11",
-    "zone.js": "npm:zone.js@0.6.15",
+    "zone.js": "npm:zone.js@0.6.16",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -99,7 +95,7 @@ System.config({
     "npm:@angular/core@2.0.0-rc.5": {
       "process": "github:jspm/nodelibs-process@0.1.2",
       "rxjs": "npm:rxjs@5.0.0-beta.6",
-      "zone.js": "npm:zone.js@0.6.15"
+      "zone.js": "npm:zone.js@0.6.16"
     },
     "npm:@angular/http@2.0.0-rc.5": {
       "@angular/core": "npm:@angular/core@2.0.0-rc.5",
@@ -118,11 +114,6 @@ System.config({
       "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.5",
       "@angular/core": "npm:@angular/core@2.0.0-rc.5",
       "process": "github:jspm/nodelibs-process@0.1.2"
-    },
-    "npm:@angular/router-deprecated@2.0.0-rc.2": {
-      "@angular/common": "npm:@angular/common@2.0.0-rc.5",
-      "@angular/core": "npm:@angular/core@2.0.0-rc.5",
-      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.5"
     },
     "npm:@angular/router@3.0.0-rc.1": {
       "@angular/common": "npm:@angular/common@2.0.0-rc.5",
@@ -442,7 +433,7 @@ System.config({
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
     },
-    "npm:zone.js@0.6.15": {
+    "npm:zone.js@0.6.16": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     }
